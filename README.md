@@ -4,7 +4,7 @@ Projeto final desenvolvido para a disciplina de **Programação Orientada a Obje
 
 ## Sobre o projeto
 
-O tema proposto pela disciplina foi um sistema de cadastro de funcionários e registro de ponto, com o objetivo de aplicar na prática os conteúdos estudados ao longo do curso: encapsulamento, herança, polimorfismo, classes abstratas, tratamento de exceções e persistência de dados em arquivo.
+O tema proposto para o projeto final foi um sistema de cadastro de funcionários e registro de ponto, com o objetivo de aplicar na prática os conteúdos estudados ao longo do curso: encapsulamento, herança, polimorfismo, classes abstratas, tratamento de exceções e persistência de dados em arquivo.
 
 O sistema simula uma aplicação de RH bem simples, com dois perfis de acesso:
 
