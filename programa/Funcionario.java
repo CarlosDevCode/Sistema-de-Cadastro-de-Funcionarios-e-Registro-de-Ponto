@@ -4,18 +4,17 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Classe abstrata que representa um Funcionario da empresa.
- * Define os atributos e comportamentos comuns a todos os tipos de funcionario,
- * utilizando encapsulamento (atributos protected + getters/setters) e
- * deixando o calculo do salario e o tipo como responsabilidade das subclasses
- * (polimorfismo).
- *
- * O registro de ponto foi colocado aqui na classe base porque tanto o
- * funcionario CLT quanto o Gerente podem bater ponto (controle de
- * frequencia) — a diferenca entre os tipos fica apenas na forma de
- * calcular o salario.
- */
+//Classe abstrata que representa um Funcionario da empresa.
+//Define os atributos e comportamentos comuns a todos os tipos de funcionario,
+//utilizando encapsulamento (atributos protected + getters/setters) e
+//deixando o calculo do salario e o tipo como responsabilidade das subclasses
+//(polimorfismo).
+
+//O registro de ponto foi colocado aqui na classe base porque tanto o
+//funcionario CLT quanto o Gerente podem bater ponto (controle de
+//frequencia) — a diferenca entre os tipos fica apenas na forma de
+//calcular o salario.
+
 public abstract class Funcionario implements Serializable {
 
     // Contador estatico responsavel por gerar o proximo id disponivel.
@@ -31,18 +30,14 @@ public abstract class Funcionario implements Serializable {
     protected boolean ativo;
     protected List<RegistroPonto> registros;
 
-    /**
-     * Construtor usado ao cadastrar um novo funcionario: o id e gerado
-     * automaticamente de forma incremental.
-     */
+    //Construtor usado ao cadastrar um novo funcionario: o id e gerado
+    //automaticamente de forma incremental.
     public Funcionario(String nome, String cpf, String telefone, String cargo, LocalDate dataAdmissao) {
         this(proximoId, nome, cpf, telefone, cargo, dataAdmissao);
     }
 
-    /**
-     * Construtor usado ao carregar um funcionario ja existente a partir do
-     * arquivo, preservando o id original.
-     */
+    //Construtor usado ao carregar um funcionario ja existente a partir do
+    //arquivo, preservando o id original.
     protected Funcionario(int id, String nome, String cpf, String telefone, String cargo, LocalDate dataAdmissao) {
         this.id = id;
         if (id >= proximoId) {
@@ -144,17 +139,13 @@ public abstract class Funcionario implements Serializable {
         return total;
     }
 
-    /**
-     * Cada subtipo de funcionario calcula seu salario de forma diferente
-     * (polimorfismo em acao).
-     */
+    //Cada subtipo de funcionario calcula seu salario de forma diferente
+    //(polimorfismo em acao).
     public abstract double calcularSalario();
 
     public abstract String getTipo();
 
-    /**
-     * Serializa o funcionario em uma linha de texto para persistencia em arquivo.
-     */
+    //Serializa o funcionario em uma linha de texto para persistencia em arquivo.
     public abstract String toFileString();
 
     @Override

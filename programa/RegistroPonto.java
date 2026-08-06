@@ -4,10 +4,8 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- * Representa um registro de ponto (entrada e saida) de um funcionario CLT
- * em um determinado dia.
- */
+//Representa um registro de ponto (entrada e saida) de um funcionario CLT
+//em um determinado dia.
 public class RegistroPonto implements Serializable {
 
     private static final DateTimeFormatter FORMATO_HORA = DateTimeFormatter.ofPattern("HH:mm");

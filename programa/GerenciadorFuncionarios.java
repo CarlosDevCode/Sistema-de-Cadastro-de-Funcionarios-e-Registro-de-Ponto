@@ -8,10 +8,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Classe responsavel por gerenciar o cadastro de funcionarios (CRUD),
- * gerar relatorios e persistir/carregar os dados em arquivos .txt.
- */
+//Classe responsavel por gerenciar o cadastro de funcionarios (CRUD),
+//gerar relatorios e persistir/carregar os dados em arquivos .txt.
 public class GerenciadorFuncionarios {
 
     private static final String ARQUIVO_FUNCIONARIOS = "funcionarios.txt";
@@ -123,10 +121,8 @@ public class GerenciadorFuncionarios {
 
     // ---------------- Persistencia em arquivo ----------------
 
-    /**
-     * Salva a lista de funcionarios e seus registros de ponto em arquivos .txt.
-     * Erros de escrita sao tratados e informados, sem interromper a aplicacao.
-     */
+    //Salva a lista de funcionarios e seus registros de ponto em arquivos .txt.
+    //Erros de escrita sao tratados e informados, sem interromper a aplicacao.
     public void salvarDados() {
         try (PrintWriter pw = new PrintWriter(new FileWriter(ARQUIVO_FUNCIONARIOS))) {
             for (Funcionario f : funcionarios) {
@@ -147,10 +143,8 @@ public class GerenciadorFuncionarios {
         }
     }
 
-    /**
-     * Carrega os dados persistidos ao iniciar o sistema. Linhas corrompidas
-     * ou invalidas sao ignoradas e reportadas, sem interromper a leitura.
-     */
+    //Carrega os dados persistidos ao iniciar o sistema. Linhas corrompidas
+    //ou invalidas sao ignoradas e reportadas, sem interromper a leitura.
     private void carregarDados() {
         File arquivoFuncionarios = new File(ARQUIVO_FUNCIONARIOS);
         if (arquivoFuncionarios.exists()) {

@@ -1,11 +1,10 @@
 import java.time.LocalDate;
 
-/**
- * Funcionario do tipo CLT: possui salario base fixo e registra ponto
- * diariamente (via metodos herdados de Funcionario). As horas que
- * ultrapassarem a carga horaria mensal esperada (220h) sao pagas como
- * hora extra, compondo o salario final.
- */
+//Funcionario do tipo CLT: possui salario base fixo e registra ponto
+//diariamente (via metodos herdados de Funcionario). As horas que
+//ultrapassarem a carga horaria mensal esperada (220h) sao pagas como
+//hora extra, compondo o salario final.
+
 public class FuncionarioCLT extends Funcionario {
 
     private static final double HORAS_MENSAIS_ESPERADAS = 220.0;

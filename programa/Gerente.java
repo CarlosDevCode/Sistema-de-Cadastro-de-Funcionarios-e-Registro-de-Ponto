@@ -1,12 +1,11 @@
 import java.time.LocalDate;
 
-/**
- * Funcionario do tipo Gerente: recebe salario fixo mensal acrescido de um
- * bonus. Assim como o CLT, o gerente tambem pode registrar ponto (metodos
- * herdados de Funcionario) para fins de controle de frequencia — porem,
- * diferente do CLT, as horas registradas nao alteram o valor do salario,
- * que permanece fixo.
- */
+//Funcionario do tipo Gerente: recebe salario fixo mensal acrescido de um
+//bonus. Assim como o CLT, o gerente tambem pode registrar ponto (metodos
+//herdados de Funcionario) para fins de controle de frequencia — porem,
+//diferente do CLT, as horas registradas nao alteram o valor do salario,
+//que permanece fixo.
+
 public class Gerente extends Funcionario {
 
     private double salarioFixo;

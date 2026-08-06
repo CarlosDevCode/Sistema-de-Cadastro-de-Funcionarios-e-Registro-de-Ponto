@@ -3,13 +3,12 @@ import java.time.LocalTime;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
-/**
- * Classe principal do Sistema de Cadastro de Funcionarios e Registro de Ponto.
- * Contem o menu de acesso do funcionario (registro de ponto, disponivel para
- * qualquer tipo de funcionario) e o menu de acesso do administrador
- * (protegido por senha), que permite cadastrar, editar, excluir/desligar
- * funcionarios e gerar relatorios.
- */
+//Classe principal do Sistema de Cadastro de Funcionarios e Registro de Ponto.
+//Contem o menu de acesso do funcionario (registro de ponto, disponivel para
+//qualquer tipo de funcionario) e o menu de acesso do administrador
+//(protegido por senha), que permite cadastrar, editar, excluir/desligar
+//funcionarios e gerar relatorios.
+
 public class Main {
 
     private static final String SENHA_ADMIN = "admin123";
